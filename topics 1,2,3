@@ -1,5 +1,17 @@
 <section>  создания секций и разделов
+<link rel="stylesheet" href="styles/style.css" />
+<img img="card-image"
+src="https://code.s3.yandex.net/web-code/images/freetrack/04/card-2.jpg"  (ссылка на картинку)
+alt="Разметка теннисного корта крупным планом" />  (текст если нет картинки)
 
+border-color: #000;  цвет границы 
+border-width: 1px;  толщина границы в px 
+border-style: solid;  начертание границы (solid-линия, 
+margin внешний отступ
+padding внутренний отступ
+padding/margin: 25px 25px 30px 25px;  шорткат
+width: 100%; height: 100%;  элемент должен занять всю доступную ширину и высоту своего родительского контейнера
+text-transform регистр (uppercase вверх)
 font-size размер шрифта
 font-family  семейство шрифта
 font-family: 'Open Sans', 'Arial', sans-serif шрифт 
@@ -24,3 +36,6 @@ background-position: right bottom;
 background-position: 150px 50px;  по горизонтали сдвиг на 150px вправо от левого верхнего угла блока, по вертикали — на 50px вниз
 rgb c альфа-каналом, цвет + прозрачность 50% 
 rgb(115 170 200 / 0.5);
+
+<!--  --> комментарии в html
+/*  */  комментарии в css
