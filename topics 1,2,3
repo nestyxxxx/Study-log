@@ -1,0 +1,26 @@
+<section>  создания секций и разделов
+
+font-size размер шрифта
+font-family  семейство шрифта
+font-family: 'Open Sans', 'Arial', sans-serif шрифт 
+font-weight  «вес» шрифта, толщина (отношение ширины штриха к высоте буквы)
+font-style  стиль шрифта, например, italic — курсивный шрифт 
+text-align выравнивание текста
+width высота
+height ширина
+background-color цвет заднего фона
+background-image: url(https://yastatic.net/s3/auth2/_/msoffice.d1ada09f.svg)
+color цвет текста
+background-size pазмеры фонового изображения
+background-size: cover занимала всю поверхность
+background-size: contain вся картинка уместилась
+background-size: 220px 400px
+background-repeat
+background-repeat: no-repeat;
+background-repeat: repeat-y; 
+background-position положение фона
+background-position: center
+background-position: right bottom;
+background-position: 150px 50px;  по горизонтали сдвиг на 150px вправо от левого верхнего угла блока, по вертикали — на 50px вниз
+rgb c альфа-каналом, цвет + прозрачность 50% 
+rgb(115 170 200 / 0.5);
