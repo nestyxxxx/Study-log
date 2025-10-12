@@ -1,5 +1,6 @@
 * {box-sizing: border-box;}  поведение границ
 <section>  создания секций и разделов
+<footer> подвал
 <link rel="stylesheet" href="styles/style.css" />
 <img img="card-image"
 src="https://code.s3.yandex.net/web-code/images/freetrack/04/card-2.jpg"  (ссылка на картинку)
@@ -40,8 +41,11 @@ background-position: 150px 50px;  по горизонтали сдвиг на 15
 display: block; сделает элемент блочным 
 display: inline;  сделает элемент строчным 
 display: inline-block;  сделает элемент блочно-строчным 
+display: flex; гибкий
 rgb c альфа-каналом, цвет + прозрачность 50% 
 rgb(115 170 200 / 0.5);
+box-shadow (тень): -2px 2px 5px #FD6969;  сдвинута на 2px влево, на 2px вниз, радиус размытия — 5px,  цвет красноватый, #FD6969
+text-shadow тень текста
 
 <!--  --> комментарии в html
 /*  */  комментарии в css
