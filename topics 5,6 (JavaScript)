@@ -27,5 +27,28 @@ textContent   для чтения или изменения текста вну�
 if (надпись длиннее 40 символов) {
     уменьшить размер надписи до 33px
 } else {
-    установить обычный размер в 42px
+    установить обычный размер в 42px   
 }  
+phrase.style.fontSize = '42px';
+
+let user = {                   объекты
+    name: 'Мария',
+    dotaLevel: 21,
+    dogName: 'Железногорск'
+};
+
+let image = document.querySelector('.image');
+console.log(image.src); // https://...адрес картинки
+image.src = 'https://images.unsplash.com/photo-1548104210-6d130801c54a';      поменяли картинку
+
+let image = document.querySelector('.image');
+
+let object = {
+    name: 'Proctrastination street', // свойство с именем
+    link: 'https://images.unsplash.com/photo-1548104210-6d130801c54a'    свойство с адресом
+};
+image.src = object.link;     свойству src объекта image присвоили значение свойства link объекта object
+
+<!-- подключим библиотеку -->
+<script src="https://library-website.com/lib.js"></script>
+
