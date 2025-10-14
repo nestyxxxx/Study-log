@@ -1,4 +1,21 @@
 console.log  вывести информацию в браузерную консоль
-alert();  строки
+alert();  можно вывести сообщение на страницу(строки)
 Сложение строк называют «конкатенацией»
 let pages;  создали коробку с именем pages, то есть «страницы» 
+<script src="script.js"></script> подключение js (пишут перед </body>)
+let aliExpress = ['Лазерная указка Xiaomi', 'Гарнитура в виде телефонной трубки', 'Форма для льда «Титаник»']; массив
+console.log(aliExpress[1]); // "Гарнитура в виде телефонной трубки"  элемент массива
+let randomNumber = Math.random(); рандомное число от 0 до 1 
+Math.random() * 10 от 0 до 10
+Math.floor() округлить до целого числа вниз
+let randomNumberInt = Math.floor(Math.random() * 10); вместе
+length длина массива  
+console.log(aliExpress.length)  покажет длину массива
+function sayHello() {
+  alert('Привет, Андрей'); // тело функции
+}
+sayHello(); // Привет, Андрей 
+document  вся информация о веб-странице, доступ к управлению любым элементом на странице
+let photoElement = document.querySelector('.photo');
+// доступ к инструментам осуществляется через символ точки
+// инструмент querySelector нашёл на странице нужный элемент
