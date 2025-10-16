@@ -17,6 +17,8 @@ padding/margin: 25px 25px 30px 25px;  шорткат
 width: 100%; height: 100%;  элемент должен занять всю доступную ширину и высоту своего родительского контейнера
 text-transform регистр (uppercase вверх)
 font-size размер шрифта
+text-decoration: line-through;  зачеркнутый текст
+text-decoration: underline  подчеркнутый текст
 font-family  семейство шрифта
 font-family: 'Open Sans', 'Arial', sans-serif шрифт 
 font-weight  «вес» шрифта, толщина (отношение ширины штриха к высоте буквы)
