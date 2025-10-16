@@ -2,3 +2,9 @@ Figma
 Расстояние между элементами: Ctrl + Alt 
 Если хотите узнать расстояние до группы элементов, то зажмите [Ctrl]
 межстрочное расстояние: line-height
+
+<head>
+    <!-- метатеги и title -->
+    <link rel="stylesheet" href="reset.css"> <!-- Сначала reset.css -->
+    <link rel="stylesheet" href="style.css"> <!-- Потом свои стили -->
+</head>
