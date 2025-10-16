@@ -14,3 +14,11 @@ Figma
     <link rel="stylesheet" href="normalize.css"> <!-- Сначала normalize.css -->
     <link rel="stylesheet" href="style.css"> <!-- Потом свои стили -->
 </head>
+
+*,
+*::before,    убрать все
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
