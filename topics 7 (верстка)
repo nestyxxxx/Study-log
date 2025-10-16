@@ -8,3 +8,9 @@ Figma
     <link rel="stylesheet" href="reset.css"> <!-- Сначала reset.css -->
     <link rel="stylesheet" href="style.css"> <!-- Потом свои стили -->
 </head>
+
+<head>
+    <!-- метатеги и title -->
+    <link rel="stylesheet" href="normalize.css"> <!-- Сначала normalize.css -->
+    <link rel="stylesheet" href="style.css"> <!-- Потом свои стили -->
+</head>
