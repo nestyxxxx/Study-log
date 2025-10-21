@@ -15,13 +15,15 @@ margin внешний отступ
 padding внутренний отступ
 padding/margin: 25px 25px 30px 25px;  шорткат
 width: 100%; height: 100%;  элемент должен занять всю доступную ширину и высоту своего родительского контейнера
+letter-spacing: 0; между буквами не будет добавочного расстояния, кроме стандартного, заданного шрифтом
+box-shadow (тень): -2px 2px 5px #FD6969;  сдвинута на 2px влево, на 2px вниз, радиус размытия — 5px,  цвет красноватый, #FD6969
+text-shadow тень текста
 text-transform регистр (uppercase вверх)
-font-size размер шрифта
 text-decoration: line-through;  зачеркнутый текст
 text-decoration: underline  подчеркнутый текст
-font-family  семейство шрифта
+font-size размер шрифта
 font-family: 'Open Sans', 'Arial', sans-serif шрифт 
-font-weight  «вес» шрифта, толщина (отношение ширины штриха к высоте буквы)
+font-weight  толщина текста
 font-style  стиль шрифта, например, italic — курсивный шрифт 
 text-align выравнивание текста
 width ширина
@@ -40,17 +42,25 @@ background-position положение фона
 background-position: center
 background-position: right bottom;
 background-position: 150px 50px;  по горизонтали сдвиг на 150px вправо от левого верхнего угла блока, по вертикали — на 50px вниз
+position: relative; Для смещения элемента и создания точки отсчёта для абсолютного позиционирования
+object-fit: cover; полностью заполняет контейнер
 display: block; сделает элемент блочным 
 display: inline;  сделает элемент строчным 
 display: inline-block;  сделает элемент блочно-строчным 
 display: flex; гибкий
 flex-direction: row;       /* элементы в строку */
+flex-direction: column; /* вертикальный поток */
 justify-content: flex-start; /* прижать к началу контейнера */
 rgb c альфа-каналом, цвет + прозрачность 50% 
 rgb(115 170 200 / 0.5);
-box-shadow (тень): -2px 2px 5px #FD6969;  сдвинута на 2px влево, на 2px вниз, радиус размытия — 5px,  цвет красноватый, #FD6969
-text-shadow тень текста
-
+display: grid; /* используем grid, чтобы расположить две колонки */
+grid-template-columns: 711px 399px; /* размеры левой колонки и правой */
+grid-template-areas: "result details"; /* назначаем зоны для секций */
+grid-area: result; /* привязка к зоне грид-контейнера */
+gap: 30px;  /* расстояние между колонками */
+align-items: end; /* прижимаем секции к низу по вертикали */
+align-items: flex-start; /* выравниваем по верху формы */
+justify-content: flex-start; /* прижимаем к левому краю */
 
 
 
