@@ -1,69 +1,83 @@
-* {box-sizing: border-box;}  поведение границ
-<section>  создания секций и разделов
-<footer> подвал
-<link rel="stylesheet" href="styles/style.css" />
-<img img="card-image"
-src="https://code.s3.yandex.net/web-code/images/freetrack/04/card-2.jpg"  (ссылка на картинку)
-alt="Разметка теннисного корта крупным планом" />  (текст если нет картинки)
+Основные теги
+<section> ... </section>   <!-- создание секций и разделов -->
+<footer> ... </footer>     <!-- подвал страницы -->
+<link rel="stylesheet" href="styles/style.css" />  <!-- подключение CSS-файла -->
+<img class="card-image"
+     src="https://code.s3.yandex.net/web-code/images/freetrack/04/card-2.jpg"
+     alt="Разметка теннисного корта крупным планом" /> <!-- картинка и текст при её отсутствии -->
 
-border-color: #000;  цвет границы 
-border-width: 1px;  толщина границы в px 
-border-style: solid;  начертание границы (solid-линия, dashed-пунктир, double-двойная, dotted-точечки)
-border: 3px solid #000; непрерывная граница чёрного цвета толщиной 3px 
-margin: 0 auto; ставит элемент в центр экрана
-margin внешний отступ
-padding внутренний отступ
-padding/margin: 25px 25px 30px 25px;  шорткат
-width: 100%; height: 100%;  элемент должен занять всю доступную ширину и высоту своего родительского контейнера
-letter-spacing: 0; между буквами не будет добавочного расстояния, кроме стандартного, заданного шрифтом
-box-shadow (тень): -2px 2px 5px #FD6969;  сдвинута на 2px влево, на 2px вниз, радиус размытия — 5px,  цвет красноватый, #FD6969
-text-shadow тень текста
-text-transform регистр (uppercase вверх)
-text-decoration: line-through;  зачеркнутый текст
-text-decoration: underline  подчеркнутый текст
-font-size размер шрифта
-font-family: 'Open Sans', 'Arial', sans-serif шрифт 
-font-weight  толщина текста
-font-style  стиль шрифта, например, italic — курсивный шрифт 
-text-align выравнивание текста
-width ширина
-height высота
-background-color цвет заднего фона
-background-image: url(https://yastatic.net/s3/auth2/_/msoffice.d1ada09f.svg)
-color цвет текста
-background-size pазмеры фонового изображения
-background-size: cover занимала всю поверхность
-background-size: contain вся картинка уместилась
-background-size: 220px 400px
-background-repeat
-background-repeat: no-repeat;
-background-repeat: repeat-y; 
-background-position положение фона
-background-position: center
-background-position: right bottom;
-background-position: 150px 50px;  по горизонтали сдвиг на 150px вправо от левого верхнего угла блока, по вертикали — на 50px вниз
-position: relative; Для смещения элемента и создания точки отсчёта для абсолютного позиционирования
-object-fit: cover; полностью заполняет контейнер
-display: block; сделает элемент блочным 
-display: inline;  сделает элемент строчным 
-display: inline-block;  сделает элемент блочно-строчным 
-display: flex; гибкий
-flex-direction: row;       /* элементы в строку */
-flex-direction: column; /* вертикальный поток */
-justify-content: flex-start; /* прижать к началу контейнера */
-rgb c альфа-каналом, цвет + прозрачность 50% 
-rgb(115 170 200 / 0.5);
-display: grid; /* используем grid, чтобы расположить две колонки */
-grid-template-columns: 711px 399px; /* размеры левой колонки и правой */
-grid-template-areas: "result details"; /* назначаем зоны для секций */
-grid-area: result; /* привязка к зоне грид-контейнера */
-gap: 30px;  /* расстояние между колонками */
-align-items: end; /* прижимаем секции к низу по вертикали */
-align-items: flex-start; /* выравниваем по верху формы */
-justify-content: flex-start; /* прижимаем к левому краю */
+Комментарии
+<!-- Это комментарий в HTML -->
+/* Это комментарий в CSS */
 
+Общие правила
+* {
+  box-sizing: border-box; /* включает padding и border в общую ширину элемента */
+}
 
+Границы
+border-color: #000;      /* цвет границы */
+border-width: 1px;       /* толщина границы */
+border-style: solid;     /* тип границы: solid, dashed, dotted, double */
+border: 3px solid #000;  /* сокращённая запись: толщина, тип, цвет */
 
+Отступы
+margin: 0 auto;          /* центрирует элемент по горизонтали */
+margin: 20px;            /* внешний отступ */
+padding: 10px;           /* внутренний отступ */
+padding: 25px 25px 30px 25px;  /* сверху, справа, снизу, слева */
 
-<!--  --> комментарии в html
-/*  */  комментарии в css
+Размеры и позиционирование
+width: 100%;
+height: 100%;            /* занимает всю ширину/высоту родителя */
+position: relative;       /* создаёт точку отсчёта для absolute */
+display: block;           /* блочный элемент */
+display: inline;          /* строчный элемент */
+display: inline-block;    /* блочно-строчный элемент */
+
+Гибкая верстка (Flexbox)
+display: flex;            /* включает flex-контейнер */
+flex-direction: row;      /* горизонтально (по умолчанию) */
+flex-direction: column;   /* вертикально */
+justify-content: flex-start;  /* выравнивание по горизонтали */
+align-items: flex-start;      /* выравнивание по вертикали */
+align-items: end;             /* прижать элементы к низу */
+
+Сетка (Grid)
+display: grid;                       /* используем сетку */
+grid-template-columns: 711px 399px;  /* ширина колонок */
+grid-template-areas: "result details"; /* имена областей */
+grid-area: result;                   /* привязка элемента к области */
+gap: 30px;                           /* расстояние между ячейками */
+
+Фон и изображения
+background-color: #fff;                      /* цвет фона */
+background-image: url("ссылка");             /* картинка фона */
+background-size: cover;                      /* заполнить весь блок */
+background-size: contain;                    /* уместить всю картинку */
+background-size: 220px 400px;                /* точные размеры */
+background-repeat: no-repeat;                /* не повторять фон */
+background-repeat: repeat-y;                 /* повтор по вертикали */
+background-position: center;                 /* по центру */
+background-position: right bottom;           /* справа снизу */
+background-position: 150px 50px;             /* отступы от угла */
+object-fit: cover;                           /* заполняет контейнер */
+
+Текст и шрифт
+color: #000;                        /* цвет текста */
+font-size: 16px;                    /* размер шрифта */
+font-family: 'Open Sans', 'Arial', sans-serif;  /* шрифт */
+font-weight: 700;                   /* толщина (например, bold) */
+font-style: italic;                 /* курсив */
+text-align: center;                 /* выравнивание текста */
+letter-spacing: 0;                  /* расстояние между буквами */
+text-transform: uppercase;          /* все буквы — заглавные */
+text-decoration: underline;         /* подчеркнутый текст */
+text-decoration: line-through;      /* зачеркнутый текст */
+
+Тени
+box-shadow: -2px 2px 5px #FD6969;   /* тень элемента */
+text-shadow: 1px 1px 3px #888;      /* тень текста */
+
+Цвет и прозрачность
+background-color: rgb(115 170 200 / 0.5); /* полупрозрачный цвет (50%) */
