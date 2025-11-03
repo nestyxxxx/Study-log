@@ -420,7 +420,6 @@ div { inset: 0; }
 .section-title {
   position: sticky;
   top: 20px;   /* точка, где элемент прилипает при скролле */
-
 Тени
 box-shadow: -2px 2px 5px #FD6969;   /* тень элемента */
 text-shadow: 1px 1px 3px #888;      /* тень текста */
