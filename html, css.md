@@ -294,7 +294,7 @@ text-decoration: line-through;      /* зачеркнутый текст */
 }
 Применение шрифта:
 div {
-  font-family: 'Best Font Ever', 'Arial', 'Helvetica', sans-serif;  /* Альтернативные шрифты (Arial, Helvetica, sans-serif) указывают на случай, если основной шрифт не загрузится*/
+  font-family: Best Font Ever, 'Arial', 'Helvetica', sans-serif;  /* Альтернативные шрифты (Arial, Helvetica, sans-serif) указывают на случай, если основной шрифт не загрузится*/
   font-weight: bold;
   font-style: italic;
 }
