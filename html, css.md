@@ -273,7 +273,7 @@ outline-width: 20px;   /* ширина обводки */F
 Текст и шрифт
 color: #000;                        /* цвет текста */
 font-size: 16px;                    /* размер шрифта */
-font-family: 'Open Sans', 'Arial', sans-serif;  /* шрифт */
+font-family: Open Sans, Arial, sans-serif;  /* шрифт */
 font-family: serif;                 /* с засечками */
 font-family: sans-serif;            /* без засечек */
 font-family: monospace;             /* равная ширина символов (для кода)*/
