@@ -13,12 +13,12 @@
             "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": "Abstract/",
-                "bFile": "Abstract/",
+                "aFile": "Main.md",
+                "bFile": "Main.md",
                 "aRef": ""
               },
               "icon": "diff",
-              "title": "Diff:"
+              "title": "Diff: Main"
             }
           }
         ]
@@ -191,23 +191,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "21150f35c5538625",
+  "active": "99f88d5e30ec920e",
   "lastOpenFiles": [
+    "JavaScript.md",
+    "html, css.md",
+    "Abstract/Git.md",
     "Abstract/общее.md",
     "Abstract/верстка.md",
     "README.md",
     "Abstract/New",
-    "Abstract/Main.md",
-    "Abstract/JavaScript.md",
-    "Abstract/html, css.md",
-    "Abstract/Git.md",
+    "Main.md",
     "Abstract",
     "README.md",
     "Main.md",
-    "JavaScript.md",
     "Git.md",
     "общее.md",
-    "верстка.md",
-    "html, css.md"
+    "верстка.md"
   ]
 }
