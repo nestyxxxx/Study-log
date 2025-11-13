@@ -187,13 +187,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2a890052f01e8f72",
+  "active": "21150f35c5538625",
   "lastOpenFiles": [
     "JavaScript.md",
     "html, css.md",
-    "Abstract/Git.md",
-    "Abstract/общее.md",
-    "Abstract/верстка.md",
+    "Git.md",
+    "общее.md",
+    "верстка.md",
     "README.md",
     "Abstract/New",
     "Main.md",
