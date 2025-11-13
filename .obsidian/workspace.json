@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "9e22e4f4e9a8602c",
+        "id": "4c1eeff6a6adcc71",
         "type": "tabs",
         "children": [
           {
-            "id": "99f88d5e30ec920e",
+            "id": "2a890052f01e8f72",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "Main.md",
-                "bFile": "Main.md",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: Main"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Новая вкладка"
             }
           }
         ]
@@ -191,7 +187,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "99f88d5e30ec920e",
+  "active": "2a890052f01e8f72",
   "lastOpenFiles": [
     "JavaScript.md",
     "html, css.md",
