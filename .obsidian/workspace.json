@@ -11,10 +11,14 @@
             "id": "99f88d5e30ec920e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Новая вкладка"
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "Abstract/",
+                "bFile": "Abstract/",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff:"
             }
           }
         ]
@@ -187,18 +191,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "110288e66adbb298",
+  "active": "21150f35c5538625",
   "lastOpenFiles": [
-    "README.md",
-    "Main.md",
     "Abstract/общее.md",
     "Abstract/верстка.md",
-    "Abstract/README.md",
+    "README.md",
+    "Abstract/New",
     "Abstract/Main.md",
     "Abstract/JavaScript.md",
     "Abstract/html, css.md",
     "Abstract/Git.md",
     "Abstract",
+    "README.md",
+    "Main.md",
     "JavaScript.md",
     "Git.md",
     "общее.md",
