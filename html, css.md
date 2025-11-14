@@ -373,7 +373,7 @@ button:focus-within {
 
 
 text-decoration: none - /*убирает любые декоративные линии*/
-text-decoration: underline  - /*подчёркивание текста*/
+text-decoration: underline  - /*подчёркивание текста  */
 
 Работа с переполнением текста
 white-space: nowrap;     /* Текст не переносится по пробелам.     Используется для заголовков и предпросмотра текста. */  
