@@ -38,13 +38,13 @@ let user = {                   объекты
 };
 
 let image = document.querySelector('.image');
-console.log(image.src); // https://...адрес картинки
+console.log(image.src);        // https://...адрес картинки
 image.src = 'https://images.unsplash.com/photo-1548104210-6d130801c54a';      поменяли картинку
 
 let image = document.querySelector('.image');
 
 let object = {
-    name: 'Proctrastination street', // свойство с именем
+    name: 'Proctrastination street',          // свойство с именем
     link: 'https://images.unsplash.com/photo-1548104210-6d130801c54a'    свойство с адресом
 };
 image.src = object.link;     свойству src объекта image присвоили значение свойства link объекта object
