@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Git"
+              "title": "README"
             }
           }
         ]
@@ -196,11 +196,11 @@
   },
   "active": "2a890052f01e8f72",
   "lastOpenFiles": [
+    "JavaScript.md",
+    "Git.md",
     "общее.md",
     "html, css.md",
-    "Git.md",
     "верстка.md",
-    "JavaScript.md",
     "Main.md",
     "README.md",
     "Abstract/New",
