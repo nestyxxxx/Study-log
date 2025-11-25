@@ -1,58 +1,81 @@
-console.log  вывести информацию в браузерную консоль
-alert();  можно вывести сообщение на страницу(строки)
-Сложение строк называют «конкатенацией»
-let pages;  создали коробку с именем pages, то есть «страницы» 
-<script src="script.js"></script> подключение js (пишут перед </body>)
-let aliExpress = ['Лазерная указка Xiaomi', 'Гарнитура в виде телефонной трубки', 'Форма для льда «Титаник»']; массив
-console.log(aliExpress[1]);        // "Гарнитура в виде телефонной трубки"  элемент массива
-let randomNumber = Math.random(); рандомное число от 0 до 1 
-Math.random() * 10 от 0 до 10
-Math.floor() округлить до целого числа вниз
-let randomNumberInt = Math.floor(Math.random() * 10); вместе
-length длина массива  
-console.log(aliExpress.length)  покажет длину массива
-function sayHello() {
-  alert('Привет, Андрей');       // тело функции
+Внутри HTML:
+<script src="file.js"></script>
+
+Вывод на страницу
+document.write('Текст');
+
+Вывод в консоль
+console.log('Текст');
+
+Вывод в модальное окно
+alert('Прочти меня и сразу же закрой!');
+
+Конкатенация: console.log('вино' + 'град');     // "виноград"
+
+При сложении строки с числом получается строка:
+console.log(100 + 500);     // сложили два числа, получили число 600
+console.log(100 + '500');     // сложили число и строку, получили строку '100500'
+
+Шаблонные строки ``
+могут содержать переносы строки:
+console.log(`Это - шаблонная строка,
+и она может занимать 
+несколько строк`);
+
+Также шаблонные строки могут содержать вычисляемые выражения внутри фигурных скобок со знаком доллара в начале `$F{...}`:
+console.log(`${2 + 5} раз отмерь - ${9 - 8} отрежь`); // "7 раз отмерь - 1 отрежь"
+
+Переменные
+Объявление переменных:
+let championOfTheWorld = 'Франция'; // можно сразу, со словом let
+
+let olympicChampion;
+olympicChampion = 'Великобритания'; // можно позже, тогда без let
+
+olympicChampion = 'Бразилия'; // значение переменной можно изменить
+console.log(olympicChampion); // Бразилия
+
+// Устанавливаем в магазине прогрессивную вечернюю скидку:
+// С 6 до 9 часов вечера скидка растёт на 10% каждый час
+let discount = 0;
+if (hours >= 18 && hours <= 21) {
+    discount = (hours - 17) * 10;
 }
-sayHello();  Привет, Андрей 
-document  вся информация о веб-странице, доступ к управлению любым элементом на странице
-let photoElement = document.querySelector('.photo');    доступ к инструментам осуществляется через символ точки, инструмент querySelector нашёл на странице нужный элемент
 
-let button = document.querySelector('.button');     находим элемент .button и кладём в переменную
-button.addEventListener('click', function () {    обращаемся к переменной, добавляем элементу слушатель клика
-   что происходит при клике по кнопке
-}); 
-textContent   для чтения или изменения текста внутри HTML-элемента
+Условия, операнды, сравнения
+console.log('казнить' === 'помиловать'); // false — это разные строки
+console.log('казнить' !== 'помиловать'); // true
+console.log('2' !== 2); // true — строка "2" не равна числу 2
 
-if (надпись длиннее 40 символов) {
-    уменьшить размер надписи до 33px
+let teslaStockPrice = 644;
+if (teslaStockPrice > 800) {
+  console.log('Акцию пора продавать');
+} else if (teslaStockPrice > 650) {
+  console.log('Пока держим, пусть ещё подрастёт');
+} else if (teslaStockPrice > 500) {
+  console.log('Как дёшево, надо ещё докупить');
 } else {
-    установить обычный размер в 42px   
-}  
-phrase.style.fontSize = '42px';
-
-let user = {                   объекты
-    name: 'Мария',
-    dotaLevel: 21,
-    dogName: 'Железногорск'
-};
-
-let image = document.querySelector('.image');
-console.log(image.src);        // https://...адрес картинки
-image.src = 'https://images.unsplash.com/photo-1548104210-6d130801c54a';      поменяли картинку
-
-let image = document.querySelector('.image');
-
-let object = {
-    name: 'Proctrastination street',          // свойство с именем
-    link: 'https://images.unsplash.com/photo-1548104210-6d130801c54a'    свойство с адресом
-};
-image.src = object.link;     свойству src объекта image присвоили значение свойства link объекта object
-
-<!-- подключим библиотеку -->
-<script src="https://library-website.com/lib.js"></script>
-
-let array = ['животные', 'растения', 'грибы', 'микроорганизмы', 'вирусы'];    массив
-for (let i = 0; i <= 4; i+=1) {    (начальное значение переменной-счётчика; ограничение; шаг)
-  console.log(array[i]);
+  console.log('Беру на все');
 }
+
+Логическое НЕ: 
+let merry = true; 
+console.log(!merry); // false
+
+Логические И:
+let merry = true;
+let christmas = false;
+console.log(merry && christmas); // false
+
+Логическое ИЛИ:
+let merry = true;
+let christmas = false;
+console.log(merry || christmas); // true
+
+Массив
+let months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
+months[1]; // 'Февраль'
+
+months.length; // 12
+[].length; // 0 - пустой массив не содержит элементов, его длина 0
+[1, 2, 3].length; // 3 — в массиве три элемента, его длина 3
