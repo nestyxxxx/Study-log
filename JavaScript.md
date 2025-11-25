@@ -79,3 +79,67 @@ months[1]; // 'Февраль'
 months.length; // 12
 [].length; // 0 - пустой массив не содержит элементов, его длина 0
 [1, 2, 3].length; // 3 — в массиве три элемента, его длина 3
+console.log(morningList[morningList.length - 1]); // Выведите последний элемент
+
+Циклы
+while:
+let number = 10;
+while (number < 20) {
+    console.log(number);
+    number += 2;
+}
+
+for:
+for (let i = 0; i <= 10; i = i + 1) {
+  console.log(i);
+}
+
+do while:
+Это гарантирует, что тело цикла выполнится хотя бы один раз.
+let number = 21;
+do {
+    console.log(number);
+} while (number <= 20);
+
+Функции
+function consoleKitten() {
+  let a = '  Λ _ Λ';
+  let b = ' (=චᆽච=)==∫';
+  let c = '   ˉ ˉ   ˉ ˉ';
+  console.log(a); 
+  console.log(b); 
+  console.log(c);
+}
+
+Параметры функции
+function keepScore(ours, theirs) {
+  if (ours > theirs) {
+        console.log('Выиграли! 😃 Счёт ' + ours + ':' + theirs);
+  } else if (ours === theirs) {
+        console.log('Ничья. 😐 Счёт ' + ours + ':' + theirs);
+  } else {
+        console.log('Продули... 😢 Счёт ' + ours + ':' + theirs);
+    }
+}
+
+Возвращаемые значения
+function sayHello(name) {
+  let greeting = 'Привет, ' + name;
+  return greeting;    
+}
+let alisaGreeting = sayHello('Алиса');
+console.log(alisaGreeting); // "Привет, Алиса"
+
+Выход из цикла
+function sayHello(name) {
+  if (name === '') {
+    return; // если имя — пустая строка, выйдем из функции
+  }
+  let greeting = 'Привет, ' + name;    
+  return greeting;
+}
+
+let emptyGreeting = sayHello('');
+console.log(emptyGreeting); // undefined
+
+Объекты
