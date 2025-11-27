@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Main.md",
+                "file": "html, css.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Main"
+              "title": "html, css"
             }
           }
         ]
@@ -196,8 +196,8 @@
   },
   "active": "2a890052f01e8f72",
   "lastOpenFiles": [
-    "JavaScript.md",
     "Main.md",
+    "JavaScript.md",
     "README.md",
     "Git.md",
     "общее.md",
