@@ -217,3 +217,76 @@ parseInt('4d2', 16); //из шестнадцатеричной
 parseInt('10011010010', 2); //из двоичной
 
 Большие числа BigInt
+
+DOM: выбор элементов
+<!-- index.html -->
+<main id="container">
+  <div class="content">
+    <div class="content__item"></div>
+    <div class="content__item"></div>
+    <div class="content__item"></div>
+  </div>
+</main>
+
+/* script.js */
+let container = document.querySelector('#container');
+let content = container.querySelector('.content');
+let contentItem = content.querySelector('.content__item');
+console.log(contentItem) // Выведет: <div class="content__item"></div>
+let contentItems = content.querySelectorAll('.content__item');
+console.log(contentItems); /* Выведет все элементы c классом .content__item */
+
+querySelector
+querySelectorAll
+getElementById — получить элемент по идентификатору;
+getElementsByClassName — получить элементы по имени класса;
+getElementsByTagName — получить элементы по имени тега.
+
+// Получаем элемент по идентификатору через querySelector
+let container1 = document.querySelector('#container');
+// Получаем элемент по идентификатору через getElementById
+let container2 = document.getElementById('container');
+// Проверяем элементы на идентичность
+console.log(container1 === container2); // true - элементы идентичны
+
+Атрибуты и их методы
+getAttribute - принимает на вход имя атрибута и возвращает его значение
+let imageOnPage = document.querySelector('img'); 
+imageOnPage.getAttribute('src'); // вернётся ссылка, записанная в атрибуте src первого изображения, которое вернул метод querySelector
+
+hasAttribute - проверяем, есть ли у тега атрибут
+
+setAttribute - задаём значение атрибута
+
+removeAttribute - удаляем атрибут 
+
+disabled — это атрибут HTML, который делает элемент неактивным
+
+Манипуляции с классами CSS
+className - получение имени класса
+classList - получение списка классов
+contains - проверяет, есть ли у элемента класс, переданный как аргумент
+add - добавляет элементу класс
+remove - удаляет у элемента класс, переданный как аргумент
+toggle - метод toggle работает как add, если у элемента класс отсутствует, и как remove — если присутствует. То есть метод переключает класс у элемента
+
+innerHTML - cодержимое элемента
+textContent - текстовое содержимое
+innerText - другой способ заменить текстовое содержимое
+
+Реакция на действия пользователя.
+События
+'click' — клик по элементу;
+'mouseover' — пользователь навёл указатель мыши на элемент;
+'mouseout' — пользователь убрал указатель мыши с элемента;
+'scroll' — пользователь прокручивает элемент.
+
+addEventListener - способ отслеживания и реакции на событие
+element.addEventListener(eventName, handler);
+
+element — элемент, которому добавляем слушателя.
+eventName — событие, на которое нужно отреагировать. Передаётся строкой: 'click', 'scroll', 'mouseover'
+handler — функция-обработчик события. Она будет вызвана, когда событие сработает
+
+Событие отправки формы — submit
+evt.preventDefault() - отменяет стандартное событие
