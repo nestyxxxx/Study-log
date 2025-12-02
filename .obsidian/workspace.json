@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "верстка.md",
+                "file": "JavaScript.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "верстка"
+              "title": "JavaScript"
             }
           }
         ]
@@ -196,6 +196,7 @@
   },
   "active": "df4a629c301a4d65",
   "lastOpenFiles": [
+    "верстка.md",
     "Без названия.md",
     "общее.md",
     "Git.md",
@@ -203,7 +204,6 @@
     "README.md",
     "Main.md",
     "JavaScript.md",
-    "верстка.md",
     "Abstract/New",
     "Abstract"
   ]
