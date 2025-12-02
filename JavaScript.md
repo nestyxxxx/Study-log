@@ -142,4 +142,23 @@ function sayHello(name) {
 let emptyGreeting = sayHello('');
 console.log(emptyGreeting); // undefined
 
-Объекты
+Объекты   //объект myObject с четырьмя ключами
+let myObject = {
+    stringKey: 'значение',
+    numberKey: 4,
+    booleanKey: true,
+  methodKey: function consoleKitten() {
+        console.log('kitten!');
+    }
+};
+Если значение представляет собой функцию, такую пару называют методом.
+Если значение — строка, число, булево значение, массив или объект, такую пару называют свойством.
+let myObject = {
+    stringKey: 'значение',       // это свойство
+    numberKey: 4,         // это тоже свойство
+    booleanKey: true,     // и это свойство
+  methodKey: function consoleKitten() {      // а вот это метод
+        console.log('kitten!');
+    }
+};
+Получить доступ: myObject.stringKey; или myObject['numberKey'];
