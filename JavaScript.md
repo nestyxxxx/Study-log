@@ -162,3 +162,58 @@ let myObject = {
     }
 };
 Получить доступ: myObject.stringKey; или myObject['numberKey'];
+
+typeof -  oпределение типа данных
+typeof NaN;      // "number". Да, "Not a Number" имеет тип данных "number".
+typeof null;     // "object". Это даже было признано официальным багом JavaScript. Его решили не исправлять, чтобы не сломать уже написанный код.
+typeof function () {}         // "function". Хоть такого типа и нет.
+console.log(typeof null); // "object"
+
+Символы
+let A = Symbol('A');
+let B = Symbol('A');
+console.log(A === B);     //Выведет false
+
+/* Объявим переменную meaningOfLife  Значение ей пока не присвоено. */
+let meaningOfLife;
+// Тип значения переменной meaningOfLife пока что undefined.
+typeof meaningOfLife; // "undefined"
+
+const meaningOfLife = undefined;
+console.log(meaningOfLife); // undefined
+
+Строки
+console.log('АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ'.length); - длина 
+console.log('эспрессо'[0]);     // "э"
+
+Бесконечность. Метод Number.isFinite
+25 / 0;        // Infinity
+-25 / 0;      // -Infinity
+Infinity + -Infinity;     // NaN
+Infinity * 0;    // NaN
+Infinity * -1;        // -Infinity
+Infinity * -Infinity;      // -Infinity
+
+Number.isFinite(Infinity);      // false
+Number.isFinite(-Infinity);      // false
+Number.isFinite(1703);        // true
+
+NaN — Not a Number. Метод Number.isNaN
+
+Number.isNaN(NaN); // true
+Number.isNaN(0 / 0); // true
+
+Системы исчисления
+let hex = 0xFF;    //255   для шестнадцатеричной
+let binary = 0b011110;     //30   для двоичной
+
+из числа в строку:
+let num = 1234; //это десятичное число
+num.toString(16); //4d2 это уже шестнадцатеричное число
+num.toString(2); //10011010010 а вот так двоичное
+
+из строки в число:
+parseInt('4d2', 16); //из шестнадцатеричной
+parseInt('10011010010', 2); //из двоичной
+
+Большие числа BigInt
