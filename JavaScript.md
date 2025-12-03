@@ -32,8 +32,8 @@ let championOfTheWorld = 'Франция'; // можно сразу, со сло
 let olympicChampion;
 olympicChampion = 'Великобритания'; // можно позже, тогда без let
 
-olympicChampion = 'Бразилия'; // значение переменной можно изменить
-console.log(olympicChampion); // Бразилия
+olympicChampion = 'Бразилия';     // значение переменной можно изменить
+console.log(olympicChampion);      // Бразилия
 
 // Устанавливаем в магазине прогрессивную вечернюю скидку:
 // С 6 до 9 часов вечера скидка растёт на 10% каждый час
