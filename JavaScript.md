@@ -152,7 +152,7 @@ let myObject = {
     }
 };
 Если значение представляет собой функцию, такую пару называют методом.
-Если значение — строка, число, булево значение, массив или объект, такую пару называют свойством.
+Если значение - строка, число, булево значение, массив или объект, такую пару называют свойством.
 let myObject = {
     stringKey: 'значение',       // это свойство
     numberKey: 4,         // это тоже свойство
@@ -232,9 +232,9 @@ DOM: выбор элементов
 let container = document.querySelector('#container');
 let content = container.querySelector('.content');
 let contentItem = content.querySelector('.content__item');
-console.log(contentItem) // Выведет: <div class="content__item"></div>
+console.log(contentItem)       // Выведет: <div class="content__item"></div>
 let contentItems = content.querySelectorAll('.content__item');
-console.log(contentItems); /* Выведет все элементы c классом .content__item */
+console.log(contentItems);     /* Выведет все элементы c классом .content__item */
 
 querySelector
 querySelectorAll
