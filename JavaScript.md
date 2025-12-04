@@ -60,26 +60,26 @@ if (teslaStockPrice > 800) {
 
 Логическое НЕ: 
 let merry = true; 
-console.log(!merry); // false
+console.log(!merry);       // false
 
 Логические И:
 let merry = true;
 let christmas = false;
-console.log(merry && christmas); // false
+console.log(merry && christmas);     // false
 
 Логическое ИЛИ:
 let merry = true;
 let christmas = false;
-console.log(merry || christmas); // true
+console.log(merry || christmas);       // true
 
 Массив
 let months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
-months[1]; // 'Февраль'
+months[1];      // 'Февраль'
 
 months.length; // 12
 [].length; // 0 - пустой массив не содержит элементов, его длина 0
 [1, 2, 3].length; // 3 — в массиве три элемента, его длина 3
-console.log(morningList[morningList.length - 1]); // Выведите последний элемент
+console.log(morningList[morningList.length - 1]);        / Выведите последний элемент
 
 Циклы
 while:
@@ -128,19 +128,19 @@ function sayHello(name) {
   return greeting;    
 }
 let alisaGreeting = sayHello('Алиса');
-console.log(alisaGreeting); // "Привет, Алиса"
+console.log(alisaGreeting);      // "Привет, Алиса"
 
 Выход из цикла
 function sayHello(name) {
   if (name === '') {
-    return; // если имя — пустая строка, выйдем из функции
+    return; // если имя - пустая строка, выйдем из функции
   }
   let greeting = 'Привет, ' + name;    
   return greeting;
 }
 
 let emptyGreeting = sayHello('');
-console.log(emptyGreeting); // undefined
+console.log(emptyGreeting);       // undefined
 
 Объекты   //объект myObject с четырьмя ключами
 let myObject = {
