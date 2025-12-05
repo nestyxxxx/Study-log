@@ -107,10 +107,10 @@ table {
 }
 
 Границы
-border-color: #000;      /* цвет границы */
-border-width: 1px;       /* толщина границы */
-border-style: solid;     /* тип границы: solid, dashed, dotted, double */
-border: 3px solid #000;  /* сокращённая запись: толщина, тип, цвет */
+border-color: #000;            /* цвет границы */
+border-width: 1px;             /* толщина границы */
+border-style: solid;             /* тип границы: solid, dashed, dotted, double */
+border: 3px solid #000;      /* сокращённая запись: толщина, тип, цвет */
 
 Отступы
 margin: 0 auto;          /* центрирует элемент по горизонтали */
