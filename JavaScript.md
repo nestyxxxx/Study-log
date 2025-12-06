@@ -236,7 +236,7 @@ console.log(contentItem)       // Выведет: <div class="content__item"></d
 let contentItems = content.querySelectorAll('.content__item');
 console.log(contentItems);     /* Выведет все элементы c классом .content__item */
 
-querySelector
+querySelector - Найди элемент с таким id
 querySelectorAll
 getElementById — получить элемент по идентификатору;
 getElementsByClassName — получить элементы по имени класса;
