@@ -198,7 +198,7 @@ Number.isFinite(Infinity);      // false
 Number.isFinite(-Infinity);      // false
 Number.isFinite(1703);        // true
 
-NaN — Not a Number. Метод Number.isNaN
+NaN - Not a Number. Метод Number.isNaN
 
 Number.isNaN(NaN); // true
 Number.isNaN(0 / 0); // true
@@ -208,9 +208,9 @@ let hex = 0xFF;    //255   для шестнадцатеричной
 let binary = 0b011110;     //30   для двоичной
 
 из числа в строку:
-let num = 1234; //это десятичное число
-num.toString(16); //4d2 это уже шестнадцатеричное число
-num.toString(2); //10011010010 а вот так двоичное
+let num = 1234;      //это десятичное число
+num.toString(16);     //4d2 это уже шестнадцатеричное число
+num.toString(2);       //10011010010 а вот так двоичное
 
 из строки в число:
 parseInt('4d2', 16); //из шестнадцатеричной
