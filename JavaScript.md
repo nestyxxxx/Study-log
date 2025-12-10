@@ -142,7 +142,7 @@ function sayHello(name) {
 let emptyGreeting = sayHello('');
 console.log(emptyGreeting);       // undefined
 
-Объекты   //объект myObject с четырьмя ключами
+Объекты             //объект myObject с четырьмя ключами
 let myObject = {
     stringKey: 'значение',
     numberKey: 4,
@@ -166,8 +166,8 @@ let myObject = {
 typeof -  oпределение типа данных
 typeof NaN;      // "number". Да, "Not a Number" имеет тип данных "number".
 typeof null;     // "object". Это даже было признано официальным багом JavaScript. Его решили не исправлять, чтобы не сломать уже написанный код.
-typeof function () {}         // "function". Хоть такого типа и нет.
-console.log(typeof null); // "object"
+typeof function () {}                  // "function". Хоть такого типа и нет.
+console.log(typeof null);          // "object"
 
 Символы
 let A = Symbol('A');
@@ -238,9 +238,9 @@ console.log(contentItems);     /* Выведет все элементы c кл�
 
 querySelector - Найди элемент с таким id
 querySelectorAll
-getElementById — получить элемент по идентификатору;
-getElementsByClassName — получить элементы по имени класса;
-getElementsByTagName — получить элементы по имени тега.
+getElementById - получить элемент по идентификатору;
+getElementsByClassName - получить элементы по имени класса;
+getElementsByTagName - получить элементы по имени тега.
 
 // Получаем элемент по идентификатору через querySelector
 let container1 = document.querySelector('#container');
