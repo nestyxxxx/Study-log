@@ -177,7 +177,7 @@ console.log(A === B);     //Выведет false
 /* Объявим переменную meaningOfLife  Значение ей пока не присвоено. */
 let meaningOfLife;
 // Тип значения переменной meaningOfLife пока что undefined.
-typeof meaningOfLife; // "undefined"
+typeof meaningOfLife;        // "undefined"
 
 const meaningOfLife = undefined;
 console.log(meaningOfLife); // undefined
@@ -285,7 +285,7 @@ element.addEventListener(eventName, handler);
 
 element - элемент, которому добавляем слушателя.
 eventName - событие, на которое нужно отреагировать. Передаётся строкой: 'click', 'scroll', 'mouseover'
-handler — функция-обработчик события. Она будет вызвана, когда событие сработает
+handler - функция-обработчик события. Она будет вызвана, когда событие сработает
 
-Событие отправки формы — submit
+Событие отправки формы - submit
 evt.preventDefault() - отменяет стандартное событие
