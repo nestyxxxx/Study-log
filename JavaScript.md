@@ -30,7 +30,7 @@ console.log(`${2 + 5} раз отмерь - ${9 - 8} отрежь`);       // "7
 let championOfTheWorld = 'Франция';            // можно сразу, со словом let
 
 let olympicChampion;
-olympicChampion = 'Великобритания'; // можно позже, тогда без let
+olympicChampion = 'Великобритания';     // можно позже, тогда без let
 
 olympicChampion = 'Бразилия';     // значение переменной можно изменить
 console.log(olympicChampion);      // Бразилия
@@ -155,8 +155,8 @@ let myObject = {
 Если значение - строка, число, булево значение, массив или объект, такую пару называют свойством.
 let myObject = {
     stringKey: 'значение',       // это свойство
-    numberKey: 4,         // это тоже свойство
-    booleanKey: true,     // и это свойство
+    numberKey: 4,                  // это тоже свойство
+    booleanKey: true,            // и это свойство
   methodKey: function consoleKitten() {      // а вот это метод
         console.log('kitten!');
     }
@@ -194,14 +194,14 @@ Infinity * 0;    // NaN
 Infinity * -1;        // -Infinity
 Infinity * -Infinity;      // -Infinity
 
-Number.isFinite(Infinity);      // false
+Number.isFinite(Infinity);        // false
 Number.isFinite(-Infinity);      // false
-Number.isFinite(1703);        // true
+Number.isFinite(1703);          // true
 
 NaN - Not a Number. Метод Number.isNaN
 
-Number.isNaN(NaN); // true
-Number.isNaN(0 / 0); // true
+Number.isNaN(NaN);      // true
+Number.isNaN(0 / 0);      // true
 
 Системы исчисления
 let hex = 0xFF;    //255   для шестнадцатеричной
@@ -213,8 +213,8 @@ num.toString(16);     //4d2 это уже шестнадцатеричное ч�
 num.toString(2);       //10011010010 а вот так двоичное
 
 из строки в число:
-parseInt('4d2', 16); //из шестнадцатеричной
-parseInt('10011010010', 2); //из двоичной
+parseInt('4d2', 16);                       //из шестнадцатеричной
+parseInt('10011010010', 2);         //из двоичной
 
 Большие числа BigInt
 
