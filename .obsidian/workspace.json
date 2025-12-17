@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "общее.md",
+                "file": "JavaScript.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "общее"
+              "title": "JavaScript"
             }
           }
         ]
@@ -195,12 +195,12 @@
   },
   "active": "48844901650679d4",
   "lastOpenFiles": [
+    "Main.md",
+    "общее.md",
     "html, css.md",
     "JavaScript.md",
     "верстка.md",
     "Без названия.base",
-    "Без названия.canvas",
-    "общее.md",
-    "Main.md"
+    "Без названия.canvas"
   ]
 }
