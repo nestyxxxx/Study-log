@@ -133,7 +133,7 @@ console.log(alisaGreeting);      // "Привет, Алиса"
 Выход из цикла
 function sayHello(name) {
   if (name === '') {
-    return; // если имя - пустая строка, выйдем из функции
+    return;              // если имя - пустая строка, выйдем из функции
   }
   let greeting = 'Привет, ' + name;    
   return greeting;
@@ -142,7 +142,7 @@ function sayHello(name) {
 let emptyGreeting = sayHello('');
 console.log(emptyGreeting);       // undefined
 
-Объекты             //объект myObject с четырьмя ключами
+Объекты                  //объект myObject с четырьмя ключами
 let myObject = {
     stringKey: 'значение',
     numberKey: 4,
