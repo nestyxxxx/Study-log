@@ -60,7 +60,7 @@ if (teslaStockPrice > 800) {
 
 Логическое НЕ: 
 let merry = true; 
-console.log(!merry);       // false
+console.log(!merry);                           // false
 
 Логические И:
 let merry = true;
@@ -70,7 +70,7 @@ console.log(merry && christmas);     // false
 Логическое ИЛИ:
 let merry = true;
 let christmas = false;
-console.log(merry || christmas);       // true
+console.log(merry || christmas);        // true
 
 Массив
 let months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
