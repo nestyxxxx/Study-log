@@ -26,3 +26,26 @@ instanceof - показывает, является ли объект экзем
 - Promise — этот объект используется для асинхронных операций и обещает вернуть результат в будущем (либо успешный, либо ошибку).
 
 Тип Awaited<Type>, который можно использовать для извлечения типа значения, возвращаемого из асинхронной функции с помощью оператора await.
+
+Обычная функция
+function sum(a: number, b: number): number {  
+  return a + b;  
+}
+
+ Объекты
+let user: { name: string; age: number } = {  
+  name: "Ivan",  
+  age: 20  
+};
+
+interface
+interface User {
+  name: string;
+  age: number;
+}
+
+let user: User = {
+  name: "Ivan",
+  age: 25
+};
+
